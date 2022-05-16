@@ -12,7 +12,12 @@ const Navbar = ({ navbarLinks, logo }) => {
 
   return (
     <nav className='navbar'>
-      <img className='navbar__logo' src={logo} alt='Logo' />
+      <div className='navbar__logo'>
+        <a href={navbarLinks[0].url}>
+          <img className='navbar__logo--img' src={logo} alt='Logo' />
+        </a>
+        <span className='navbar__logo--txt'>El Mangal</span>
+      </div>
       {menuClicked ? (
         <FiMenu size={25} className='navbar__menu' onClick={toggleMenuClick} />
       ) : (

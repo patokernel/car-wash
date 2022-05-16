@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
 .navbar {
   position: sticky;
   top: 0;
   height: 70px;
   background-color: #000;
-  opacity: 0.75;
+  opacity: 0.9;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,9 +15,26 @@
 }
 
 .navbar__logo {
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__logo--img {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+.navbar__logo--txt {
+  font-family: 'Cinzel', serif;
+  font-size: 25px;
+  padding: 15px;
+  color: #fff;
+  background: -webkit-linear-gradient(#00dbde, #fc00ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .navbar__list {
@@ -28,9 +47,12 @@
 }
 
 .navbar__link {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   text-decoration: none;
-  color: #fff;
+  background: -webkit-linear-gradient(#00dbde, #fc00ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-transform: uppercase;
   text-align: center;
   padding: 10px;
@@ -42,7 +64,7 @@
 }
 
 .navbar__link:hover {
-  border-color: #fff;
+  border-color: #00dbde;
   transition: 250ms;
 }
 
@@ -53,6 +75,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .navbar__logo--img {
+    width: 50px;
+    height: 50px
+  }
+
   .navbar__list {
     display: flex;
     flex-direction: column;
