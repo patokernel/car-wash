@@ -57,8 +57,9 @@ function App() {
           flipped={true}
         />
       </div>
-      <Payments />
       <Location />
+      <hr />
+      <Payments />
     </div>
   )
 }

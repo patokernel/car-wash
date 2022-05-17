@@ -1,28 +1,38 @@
-import { Fragment } from 'react'
 import '../stylesheets/Payments.css'
+import mastercard from '../assets/mastercard.png'
+import visa from '../assets/visa.png'
+import amex from '../assets/amex.png'
+import bank from '../assets/bank.png'
+import cash from '../assets/cash.png'
+import bch from '../assets/bch.png'
 
 const Payments = () => {
   return (
-    <Fragment>
-      <h2>Métodos de Pago</h2>
+    <div className='payments'>
+      <h2>Medios de Pago</h2>
       <ul className='payments__list'>
         <li className='payments__item'>
-          <img src='https://picsum.photos/200' alt='Alt' />
+          <img src={mastercard} alt='Master Card' />
         </li>
         <li className='payments__item'>
-          <img src='https://picsum.photos/200' alt='Alt' />
+          <img src={visa} alt='Visa' />
         </li>
         <li className='payments__item'>
-          <img src='https://picsum.photos/200' alt='Alt' />
+          <img src={amex} alt='American Express' />
         </li>
         <li className='payments__item'>
-          <img src='https://picsum.photos/200' alt='Alt' />
+          <img src={bank} alt='Banco' />
         </li>
         <li className='payments__item'>
-          <img src='https://picsum.photos/200' alt='Alt' />
+          <img src={cash} alt='Efectivo' />
+          <p>5% Off</p>
+        </li>
+        <li className='payments__item'>
+          <img src={bch} alt='Bitcoin Cash' />
+          <p>10% Off</p>
         </li>
       </ul>
-    </Fragment>
+    </div>
   )
 }
 
