@@ -1,9 +1,23 @@
-h2 {
-  padding: 25px 0 10px 0;
-  font-size: 30px;
-  text-transform: uppercase;
+.payments {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.payments__title {
+  padding: 10px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  width: auto;
   text-align: center;
+  color: #fff;
+  border-radius: 8px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
 }
 
 .payments__list {
@@ -12,7 +26,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 25px 25px 25px;
+  padding: 15px;
 }
 
 .payments__item {
@@ -34,8 +48,8 @@ h2 {
 }
 
 @media screen and (max-width: 767px) {
-  h2 {
-    font-size: 24px;
+  .payments__title {
+    font-size: 1.5rem;
   }
 
   .payments__item {

@@ -9,7 +9,7 @@ import bch from '../assets/bch.png'
 const Payments = () => {
   return (
     <div className='payments'>
-      <h2>Medios de Pago</h2>
+      <h3 className='payments__title'>Medios de Pago</h3>
       <ul className='payments__list'>
         <li className='payments__item'>
           <img src={mastercard} alt='Master Card' />

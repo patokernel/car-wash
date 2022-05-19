@@ -5,15 +5,14 @@ import { useInView } from 'react-intersection-observer'
 const Services = ({ imageSrc, title, subtitle, flipped }) => {
 
   const { ref, inView } = useInView({
-    threshold: 0.4,
+    threshold: 0.5,
   });
 
   const renderContent = () => {
-
-    if (!flipped) {
+    if (!flipped && window.screen.width > 1000) {
       return (
         <Fragment>
-          <img src={imageSrc} alt='Example' className='service__image' />
+          <img src={imageSrc} alt={title} className='service__image' />
           <div className='service__content'>
             <h1 className='service__title'>{title}</h1>
             <p className='service__subtitle'>{subtitle}</p>
@@ -27,16 +26,18 @@ const Services = ({ imageSrc, title, subtitle, flipped }) => {
             <h1 className='service__title'>{title}</h1>
             <p className='service__subtitle'>{subtitle}</p>
           </div>
-          <img src={imageSrc} alt='Example' className='service__image' />
+          <img src={imageSrc} alt={title} className='service__image' />
         </Fragment>
       )
     }
   }
 
   return (
-    <div className={inView ? 'service service--zoom' : 'service'} ref={ref}>
-      {renderContent()}
-    </div>
+    <Fragment>
+      <div className={inView ? 'service service--zoom' : 'service'} ref={ref}>
+        {renderContent()}
+      </div>
+    </Fragment>
   )
 }
 

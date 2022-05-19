@@ -1,28 +1,46 @@
-h3 {
-  margin: 7% 0 0 0;
-  font-size: 30px;
-  text-transform: uppercase;
+.location {
   width: 100%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
-.location {
-  height: 80vh;
+.location__title {
+  margin-bottom: 30px;
+  padding: 10px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  width: auto;
+  text-align: center;
+  color: #fff;
+  border-radius: 8px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+}
+
+.location__card {
+  height: 70vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.location__card {
-  height: 80%;
+.location__item {
+  height: 90%;
   width: 60%;
   background-color: #555;
-  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 768px) {
-  .location__card {
+  .location__title {
+    font-size: 1.5rem;
+  }
+
+  .location__item {
     height: 90%;
     width: 90%;
   }

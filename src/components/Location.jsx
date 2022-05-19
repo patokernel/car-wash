@@ -1,13 +1,12 @@
-import { Fragment } from 'react'
 import '../stylesheets/Location.css'
 const Location = () => {
   return (
-    <Fragment>
-      <h3>Ubicación</h3>
-      <div className='location'>
-        <div className='location__card'></div>
+    <div className='location'>
+      <h3 className='location__title'>Ubicación</h3>
+      <div className='location__card'>
+        <div className='location__item'></div>
       </div>
-    </Fragment>
+    </div>
   )
 }
 

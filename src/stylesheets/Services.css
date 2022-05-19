@@ -1,5 +1,6 @@
 .service {
   width: 50%;
+  height: 100%;
   display: flex;
   align-items: center;
   margin: 20px;
@@ -20,7 +21,7 @@
 
 .service__image {
   width: 400px;
-  height: 400px;
+  height: 100%;
   object-fit: cover;
   border-radius: 7px;
 }
@@ -36,14 +37,36 @@
 }
 
 .service__title {
-  padding-bottom: 30px;
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+.service__subtitle {
+  text-align: start;
 }
 
 @media screen and (max-width: 767px) {
   .service {
     flex-direction: column;
     width: 90%;
-    background-color: rgb(236, 236, 236);
+    background-color: rgba(236, 236, 236, 0.8);
+  }
+
+  .service__image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .service__title {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  .service {
+    flex-direction: column;
+    width: 70%;
   }
 
   .service__image {
@@ -52,8 +75,8 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1280px) {
+@media screen and (min-width: 1000px) and (max-width: 1600px) {
   .service {
-    width: 90%;
+    width: 80%;
   }
 }
