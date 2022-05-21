@@ -2,7 +2,7 @@ import { Fragment } from 'react'
 import '../stylesheets/Services.css'
 import { useInView } from 'react-intersection-observer'
 
-const Services = ({ imageSrc, title, subtitle, flipped }) => {
+const Services = ({ videoSrc, title, subtitle, flipped }) => {
 
   const { ref, inView } = useInView({
     threshold: 0.5,
@@ -12,7 +12,7 @@ const Services = ({ imageSrc, title, subtitle, flipped }) => {
     if (!flipped && window.screen.width > 1000) {
       return (
         <Fragment>
-          <img src={imageSrc} alt={title} className='service__image' />
+          <video className='service__video' autoPlay loop muted preload src={videoSrc} />
           <div className='service__content'>
             <h1 className='service__title'>{title}</h1>
             <p className='service__subtitle'>{subtitle}</p>
@@ -26,7 +26,7 @@ const Services = ({ imageSrc, title, subtitle, flipped }) => {
             <h1 className='service__title'>{title}</h1>
             <p className='service__subtitle'>{subtitle}</p>
           </div>
-          <img src={imageSrc} alt={title} className='service__image' />
+          <video className='service__video' autoPlay loop muted preload src={videoSrc} />
         </Fragment>
       )
     }

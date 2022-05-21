@@ -6,7 +6,7 @@
   margin: 20px;
   border-radius: 8px;
   backdrop-filter: blur(20px);
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 1px 12px rgba(255, 255, 255, 0.25);
   opacity: 0;
   transform: scale(85%);
@@ -19,9 +19,9 @@
   transition: 2s;
 }
 
-.service__image {
-  width: 400px;
-  height: 100%;
+.service__video {
+  width: 500px;
+  height: 300px;
   object-fit: cover;
   border-radius: 7px;
 }
@@ -52,9 +52,10 @@
     background-color: rgba(236, 236, 236, 0.8);
   }
 
-  .service__image {
+  .service__video {
     width: 100%;
     height: 200px;
+    border-radius: 0;
   }
 
   .service__title {
@@ -69,9 +70,10 @@
     width: 70%;
   }
 
-  .service__image {
+  .service__video {
     width: 100%;
     height: 200px;
+    border-radius: 0;
   }
 }
 
