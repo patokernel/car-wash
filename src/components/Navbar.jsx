@@ -4,7 +4,7 @@ import { FiMenu, FiX } from 'react-icons/fi'
 
 const Navbar = ({ navbarLinks, logo }) => {
 
-  const [menuClicked, setMenuClicked] = useState(false)
+  const [menuClicked, setMenuClicked] = useState(true)
 
   const toggleMenuClick = () => {
     setMenuClicked(!menuClicked)
