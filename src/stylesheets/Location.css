@@ -32,7 +32,10 @@
 .location__item {
   height: 90%;
   width: 60%;
-  background-color: #555;
+}
+
+.map {
+  border: none;
 }
 
 @media screen and (max-width: 768px) {
