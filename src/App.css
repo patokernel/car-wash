@@ -55,6 +55,7 @@
 hr {
   border: 1px solid #000;
   margin: 70px;
+  opacity: .2;
 }
 
 @media screen and (max-width: 768px) {

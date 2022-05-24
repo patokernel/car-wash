@@ -1,10 +1,10 @@
 import '../stylesheets/WhatsApp.css'
 import { BsWhatsapp } from 'react-icons/bs';
 
-const WhatsApp = () => {
+const WhatsApp = ({ number }) => {
   return (
     <div class='whatsapp'>
-      <a href='https://api.whatsapp.com/send?phone=595994446100' target='_blank' rel='noreferrer'>
+      <a href={number} target='_blank' rel='noreferrer'>
         <BsWhatsapp className='whatsapp__icon' />
       </a>
     </div>

@@ -2,12 +2,13 @@ import { useState, useEffect, Fragment } from 'react'
 import './App.css'
 import RotateLoader from 'react-spinners/RotateLoader';
 import Navbar from './components/Navbar'
-import logo from './assets/logo.png'
 import Hero from './components/Hero'
-import Services from './components/Services'
-import Payments from './components/Payments'
-import Location from './components/Location'
 import WhatsApp from './components/WhatsApp';
+import Services from './components/Services'
+import Location from './components/Location'
+import Payments from './components/Payments'
+import Footer from './components/Footer'
+import logo from './assets/logo.png'
 import video from './assets/hero.mp4'
 import ducha from './assets/ducha.mp4'
 import aspirado from './assets/aspirado.mp4'
@@ -31,7 +32,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 3000)
+    }, 2000)
   }, [])
 
   return (
@@ -49,7 +50,7 @@ function App() {
           :
           <div className="App">
             <Navbar navbarLinks={navbarLinks} logo={logo} />
-            <WhatsApp />
+            <WhatsApp number={'https://api.whatsapp.com/send?phone=595994446100'} />
             <Hero videoSrc={video} />
             <div className='services'>
               <h3 className='services__title'>Nuestros Servicios</h3>
@@ -99,6 +100,7 @@ function App() {
             <Location />
             <hr />
             <Payments />
+            <Footer />
           </div>
       }
     </Fragment>

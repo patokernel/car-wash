@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 7px;
+  background-color: #242321;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    font-size: 0.8rem;
+  }
+}
