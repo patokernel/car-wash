@@ -1,0 +1,18 @@
+.whatsapp__icon {
+  display: block;
+  font-size: 50px;
+  color: #48c757;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  line-height: 80px;
+  text-align: center;
+  z-index: 100;
+}
+
+@media screen and (max-width: 768px) {
+  .whatsapp__icon {
+    font-size: 40px;
+    bottom: 80px;
+  }
+}

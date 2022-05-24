@@ -7,6 +7,7 @@ import Hero from './components/Hero'
 import Services from './components/Services'
 import Payments from './components/Payments'
 import Location from './components/Location'
+import WhatsApp from './components/WhatsApp';
 import video from './assets/hero.mp4'
 import ducha from './assets/ducha.mp4'
 import aspirado from './assets/aspirado.mp4'
@@ -48,6 +49,7 @@ function App() {
           :
           <div className="App">
             <Navbar navbarLinks={navbarLinks} logo={logo} />
+            <WhatsApp />
             <Hero videoSrc={video} />
             <div className='services'>
               <h3 className='services__title'>Nuestros Servicios</h3>

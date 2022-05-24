@@ -1,4 +1,5 @@
 import '../stylesheets/Location.css'
+
 const Location = () => {
   return (
     <div className='location'>
