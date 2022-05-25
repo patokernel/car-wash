@@ -1,9 +1,10 @@
 import { useState, useEffect, Fragment } from 'react'
 import './App.css'
-import RotateLoader from 'react-spinners/RotateLoader';
+import RotateLoader from 'react-spinners/RotateLoader'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import WhatsApp from './components/WhatsApp';
+import WhatsApp from './components/WhatsApp'
+import About from './components/About'
 import Services from './components/Services'
 import Location from './components/Location'
 import Payments from './components/Payments'
@@ -52,7 +53,8 @@ function App() {
             <Navbar navbarLinks={navbarLinks} logo={logo} />
             <WhatsApp number={'https://api.whatsapp.com/send?phone=595994446100'} />
             <Hero videoSrc={video} />
-            <div className='services'>
+            <About />
+            <div className='services__container'>
               <h3 className='services__title'>Nuestros Servicios</h3>
               <Services
                 videoSrc={ducha}
