@@ -8,7 +8,7 @@ import bch from '../assets/bch.png'
 
 const Payments = () => {
   return (
-    <div className='payments'>
+    <div className='payments' id='payments'>
       <h3 className='payments__title'>Medios de Pago</h3>
       <ul className='payments__list'>
         <li className='payments__item'>

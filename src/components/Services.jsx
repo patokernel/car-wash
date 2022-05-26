@@ -12,9 +12,9 @@ const Services = ({ videoSrc, title, subtitle, flipped }) => {
     if (!flipped && window.screen.width > 1000) {
       return (
         <Fragment>
-          <video className='service__video' autoPlay loop muted preload src={videoSrc} />
+          <video className='service__video' autoPlay loop muted preload='true' src={videoSrc} />
           <div className='service__content'>
-            <h1 className='service__title'>{title}</h1>
+            <h2 className='service__title'>{title}</h2>
             <p className='service__subtitle'>{subtitle}</p>
           </div>
         </Fragment>
@@ -23,10 +23,10 @@ const Services = ({ videoSrc, title, subtitle, flipped }) => {
       return (
         <Fragment>
           <div className='service__content'>
-            <h1 className='service__title'>{title}</h1>
+            <h2 className='service__title'>{title}</h2>
             <p className='service__subtitle'>{subtitle}</p>
           </div>
-          <video className='service__video' autoPlay loop muted preload src={videoSrc} />
+          <video className='service__video' autoPlay loop muted preload='true' src={videoSrc} />
         </Fragment>
       )
     }
@@ -34,7 +34,7 @@ const Services = ({ videoSrc, title, subtitle, flipped }) => {
 
   return (
     <Fragment>
-      <div className={inView ? 'service service--zoom' : 'service'} ref={ref}>
+      <div className={inView ? 'service service--zoom' : 'service'} ref={ref} id='services'>
         {renderContent()}
       </div>
     </Fragment>
