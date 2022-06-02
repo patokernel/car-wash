@@ -1,5 +1,6 @@
 {
   "name": "car-wash",
+  "homepage": "https://lavaderoelmangal.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
