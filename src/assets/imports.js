@@ -1,5 +1,5 @@
 import logo from './logo.png'
-import video from './hero.mp4'
+import video from './El-Mangal.mp4'
 import ducha from './ducha.mp4'
 import aspirado from './aspirado.mp4'
 import tapizado from './tapizado.mp4'
