@@ -25,11 +25,10 @@ const Payments = () => {
         </li>
         <li className='payments__item'>
           <img src={cash} alt='Efectivo' />
-          <p>5% Off</p>
         </li>
         <li className='payments__item'>
           <img src={bch} alt='Bitcoin Cash' />
-          <p>10% Off</p>
+          <p>5% Off</p>
         </li>
       </ul>
     </div>

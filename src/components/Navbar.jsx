@@ -34,7 +34,7 @@ const Navbar = ({ logo }) => {
           </Link>
         </li>
         <li className='navbar__item'>
-          <Link to='services' spy={true} smooth={true} offset={-250} duration={500} className='navbar__link' onClick={toggleMenuClick}>
+          <Link to='services' spy={true} smooth={true} offset={-280} duration={500} className='navbar__link' onClick={toggleMenuClick}>
             Servicios
           </Link>
         </li>
